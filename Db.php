@@ -50,9 +50,13 @@ class InsertData extends Db
         '$this->password','$this->is_admin','$this->imagename' )");
         $stmt->fetch(PDO::FETCH_ASSOC);
         $stmt->execute();
-        if($stmt){
-            header("Location: login.php");
-        }
+       var_dump( $this->is_admin);
+        if( $this->is_admin==1){
+             header("Location: Admin.php");
+         }else{
+            header("Location: View.php");
+         }
+    //    var_dump('hii');
    
 
 }

@@ -1,26 +1,3 @@
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="Product.php">Buy Product</a>
 <a href="Logout.php">Log OUt</a>
 </body>
 </html> 

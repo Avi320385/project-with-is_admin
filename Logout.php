@@ -7,7 +7,7 @@ session_start();
 //    echo "You are logged out";
 //   header("Location: Register_form.php");
 // }
-
+//echo "hii";
 
 //  session_unset();
 // }
@@ -23,7 +23,7 @@ session_start();
 
 $_SESSION['login'] = false;
 
-session_unset();
+//session_unset();
 
 //var_dump($_SESSION);
 echo "you are logged out";

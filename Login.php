@@ -37,7 +37,7 @@ class Login extends Db
 
     $obj = new Login();
     $obj->login();
-
+    $_SESSION['user_id']=($obj->data['id']);
     if ($obj->data) {
         $_SESSION['login'] = true;
         if ($obj->data['is_admin'] == 1) {

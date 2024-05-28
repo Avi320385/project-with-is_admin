@@ -25,15 +25,16 @@
 <?php
 include './Db.php';
 //error_reporting(false);
-session_start();
+//session_start();
+//($_SESSION['login'] == true);
 $obj=new InsertData();
 $obj->insert()
   
-// if($obj)
+//if($obj){
 // {
 //     header("Location: login.php");
 // }
-// if($_SESSION['login'] == true){
+
 // if ($obj->is_admin==1) {
 //     header("Location: Admin.php");
 //     exit;
@@ -41,7 +42,7 @@ $obj->insert()
 //     header("Location: View.php");
 //     exit;
 // }
-// }
+ 
 // if ( $_SESSION['login'] === true) {
 //     if ($obj->is_admin == 1) {
 //         header("Location: Admin.php");
@@ -55,4 +56,5 @@ $obj->insert()
 //     header("Location: login.php");
 //     exit();
 // }
+//var_dump(( $_SESSION['login']));
 ?>
