@@ -18,6 +18,9 @@ class ProductView extends Db
 $obj->selctAll();
 foreach ($obj->data as $data) { ?><br>
 <img src="product_image/<?php echo $data->image; ?>" alt=""><br>
+<h2>Product Name: <?php echo $data->name; ?></h2>
+<h2>Price: <?php echo $data->price; ?></h2>
+
 <a href="Login.php ?>">log In</a>
 <a href="Register_form.php ?>">Register</a>
 
