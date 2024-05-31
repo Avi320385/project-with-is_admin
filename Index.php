@@ -17,10 +17,10 @@ class ProductView extends Db
     $obj=new ProductView();
 $obj->selctAll();
 foreach ($obj->data as $data) { ?><br>
-<img src="product_image/<?php echo $data->image; ?>" alt=""><br>
+<img height="200px" width="200px" src="product_image/<?php echo $data->image; ?>" alt=""><br>
 <h2>Product Name: <?php echo $data->name; ?></h2>
 <h2>Price: <?php echo $data->price; ?></h2>
-
+<a href="Add_To_Cart.php?product_id=<?php echo $data->id;?>">Add To Cart</a>
 <a href="Login.php ?>">log In</a>
 <a href="Register_form.php ?>">Register</a>
 

@@ -63,6 +63,6 @@ class Login extends Db
     <title>Document</title>
 </head>
 <body>
-    <a href="logout.php">Log OUt</a>
+    <a href="Logout.php">Log OUt</a>
 </body>
 </html>

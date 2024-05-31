@@ -1,15 +1,9 @@
 <?php
 session_start();
 
-if($_SESSION['login'] == true){
-     header("Location: Product.php");
-    
-}else{
-    echo "please login or register first";
-    header("Location: Register_form.php");
-
+if($_SESSION['login'] !=true){
+    header("Location:Register_form.php");   
 }
-
 ?>
 
 
