@@ -1,3 +1,15 @@
+<?php
+ include './Db.php';
+session_start();
+//$id=$_SESSION['user_id'];
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +20,7 @@
 <body>
     <a href="Product.php">Buy Product</a>
 <a href="Logout.php">Log OUt</a>
+
+<a href="Edit_User.php?id=<?php echo $_SESSION['user_id']; ?>">Edit</a>
 </body>
 </html> 

@@ -44,7 +44,8 @@ class Login extends Db
             header("Location: Admin.php");
             exit;
         } else {
-            header("Location: View.php");
+            header("Location: View.php?id=" . $_SESSION['user_id']);
+         
             exit;
         }
     } else {
